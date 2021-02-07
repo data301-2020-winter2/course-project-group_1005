@@ -18,7 +18,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 ## Team Members
 
 - Ryan Peters: 4th Year Chemistry major just trying to graduate this year! :)
-- Person 2: one sentence about you!
+- Maysey Lu: 2nd Year Computer Science major and executive member of UBCO ASA ٩(^‿^)۶
 - Person 3: one sentence about you!
 
 ## References
