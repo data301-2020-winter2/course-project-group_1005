@@ -36,4 +36,4 @@ The dataset is from user 'Mikeemes' on Kaggle, a data scientist from Toronto, Ca
 
 ## References
 
-hDttps://www.kaggle.com/smeeeow/steam-game-reviews
+https://www.kaggle.com/smeeeow/steam-game-reviews
