@@ -3,6 +3,9 @@
 
 DATA301 Group 1005 Project
 
+## Dashboard Submissions
+Jaden: [Online Dashboard Link](https://us-west-2b.online.tableau.com/#/site/data301/views/Lab7-Group1005-Jaden/Dashboard?:iid=3)
+
 ## Milestones
 
 Details for Milestone are available on Canvas (left sidebar, Course Project) or [here](https://firas.moosvi.com/courses/data301/project/milestone01.html).
