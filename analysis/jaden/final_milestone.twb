@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20211.21.0320.1853                               -->
-<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xml:base='https://us-west-2b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AutoCreateAndUpdateDSDPhoneLayouts />
     <_.fcp.MarkAnimation.true...MarkAnimation />
@@ -13,6 +13,7 @@
     <WindowsPersistSimpleIdentifiers />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='Lab7-Group1005-Jaden' path='/t/data301/workbooks' revision='1.0' site='data301' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -22,7 +23,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='reviews' name='textscan.0syv6pg065fw1213ajief0m1auo7'>
-            <connection class='textscan' directory='C:/Users/jaden/Documents/GitHub/course-project-group_1005/data/data_processed' filename='reviews.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/jaden/Documents/GitHub/course-project-group_1005/data/data_processed' filename='reviews.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0syv6pg065fw1213ajief0m1auo7' name='reviews.csv' table='[reviews#csv]' type='table'>
@@ -777,8 +778,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='41' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98230' id='40' param='vert' w='99064' x='468' y='885'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='45' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98230' id='44' param='vert' w='99064' x='468' y='885'>
                 <zone fixed-size='280' h='49115' id='26' is-fixed='true' name='Count of Recommended' w='20130' x='468' y='885'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
