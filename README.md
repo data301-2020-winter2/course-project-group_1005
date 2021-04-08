@@ -5,6 +5,7 @@ DATA301 Group 1005 Project
 
 ## Dashboard Submissions
 Jaden: [Online Dashboard Link](https://us-west-2b.online.tableau.com/#/site/data301/views/Lab7-Group1005-Jaden/Dashboard?:iid=3)
+
 Maysey: [Online Dashboard Link](https://us-west-2b.online.tableau.com/#/site/data301/views/Lab7-Group1005-Maysey/Overview?:iid=7)
 
 ## Milestones
