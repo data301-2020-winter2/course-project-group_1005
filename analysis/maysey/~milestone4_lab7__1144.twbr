@@ -1,0 +1,1926 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0217.1203                               -->
+<workbook source-build='2020.4.2 (20204.21.0217.1203)' source-platform='win' version='18.1' xml:base='https://us-west-2b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpecificWebTargetsForActions />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Lab7-Group1005-Maysey' path='/t/data301/workbooks' revision='1.0' site='data301' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='reviews' inline='true' name='federated.1ekih450yvwccu17ypca00fm6o76' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='reviews' name='textscan.17to9871kzhdx71dduijj0h2vol5'>
+            <connection class='textscan' directory='C:/Users/ryanp/DATA301 Group Project/course-project-group_1005/data/data_processed' filename='reviews.csv' password='' port='0' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.17to9871kzhdx71dduijj0h2vol5' name='reviews.csv' table='[reviews#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='language' ordinal='1' />
+            <column datatype='string' name='review' ordinal='2' />
+            <column datatype='integer' name='timestamp_created' ordinal='3' />
+            <column datatype='integer' name='timestamp_updated' ordinal='4' />
+            <column datatype='boolean' name='recommended' ordinal='5' />
+            <column datatype='integer' name='votes_up' ordinal='6' />
+            <column datatype='integer' name='votes_funny' ordinal='7' />
+            <column datatype='real' name='steam_algorithm_score' ordinal='8' />
+            <column datatype='integer' name='comment_count' ordinal='9' />
+            <column datatype='boolean' name='received_for_free' ordinal='10' />
+            <column datatype='boolean' name='written_during_early_access' ordinal='11' />
+            <column datatype='integer' name='num_games_owned' ordinal='12' />
+            <column datatype='integer' name='num_reviews' ordinal='13' />
+            <column datatype='integer' name='playtime_forever' ordinal='14' />
+            <column datatype='integer' name='playtime_last_two_weeks' ordinal='15' />
+            <column datatype='integer' name='playtime_at_review' ordinal='16' />
+            <column datatype='integer' name='last_played' ordinal='17' />
+            <column datatype='string' name='game_id' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.17to9871kzhdx71dduijj0h2vol5' name='reviews.csv' table='[reviews#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='language' ordinal='1' />
+            <column datatype='string' name='review' ordinal='2' />
+            <column datatype='integer' name='timestamp_created' ordinal='3' />
+            <column datatype='integer' name='timestamp_updated' ordinal='4' />
+            <column datatype='boolean' name='recommended' ordinal='5' />
+            <column datatype='integer' name='votes_up' ordinal='6' />
+            <column datatype='integer' name='votes_funny' ordinal='7' />
+            <column datatype='real' name='steam_algorithm_score' ordinal='8' />
+            <column datatype='integer' name='comment_count' ordinal='9' />
+            <column datatype='boolean' name='received_for_free' ordinal='10' />
+            <column datatype='boolean' name='written_during_early_access' ordinal='11' />
+            <column datatype='integer' name='num_games_owned' ordinal='12' />
+            <column datatype='integer' name='num_reviews' ordinal='13' />
+            <column datatype='integer' name='playtime_forever' ordinal='14' />
+            <column datatype='integer' name='playtime_last_two_weeks' ordinal='15' />
+            <column datatype='integer' name='playtime_at_review' ordinal='16' />
+            <column datatype='integer' name='last_played' ordinal='17' />
+            <column datatype='string' name='game_id' ordinal='18' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>language</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[language]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>language</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[review]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>review</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp_created</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[timestamp_created]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>timestamp_created</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp_updated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[timestamp_updated]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>timestamp_updated</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recommended</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[recommended]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>recommended</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>votes_up</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[votes_up]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>votes_up</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>votes_funny</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[votes_funny]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>votes_funny</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>steam_algorithm_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[steam_algorithm_score]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>steam_algorithm_score</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>comment_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[comment_count]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>comment_count</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>received_for_free</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[received_for_free]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>received_for_free</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>written_during_early_access</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[written_during_early_access]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>written_during_early_access</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_games_owned</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_games_owned]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>num_games_owned</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_reviews]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>num_reviews</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playtime_forever</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[playtime_forever]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>playtime_forever</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playtime_last_two_weeks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[playtime_last_two_weeks]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>playtime_last_two_weeks</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playtime_at_review</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[playtime_at_review]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>playtime_at_review</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_played</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[last_played]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>last_played</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[game_id]</local-name>
+            <parent-name>[reviews.csv]</parent-name>
+            <remote-alias>game_id</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reviews.csv_517C9232550E4DB983EB7D77690BB083]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='reviews.csv' datatype='table' name='[__tableau_internal_object_id__].[reviews.csv_517C9232550E4DB983EB7D77690BB083]' role='measure' type='quantitative' />
+      <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+      <column caption='Game Id' datatype='string' name='[game_id]' role='dimension' type='nominal' />
+      <column caption='Language' datatype='string' name='[language]' role='dimension' type='nominal' />
+      <column caption='Last Played' datatype='integer' name='[last_played]' role='measure' type='quantitative' />
+      <column caption='Num Games Owned' datatype='integer' name='[num_games_owned]' role='measure' type='quantitative' />
+      <column caption='Num Reviews' datatype='integer' name='[num_reviews]' role='measure' type='quantitative' />
+      <column caption='Playtime At Review' datatype='integer' name='[playtime_at_review]' role='measure' type='quantitative' />
+      <column caption='Playtime Forever' datatype='integer' name='[playtime_forever]' role='measure' type='quantitative' />
+      <column caption='Playtime Last Two Weeks' datatype='integer' name='[playtime_last_two_weeks]' role='measure' type='quantitative' />
+      <column caption='Received For Free' datatype='boolean' name='[received_for_free]' role='dimension' type='nominal' />
+      <column caption='Recommended' datatype='boolean' name='[recommended]' role='dimension' type='nominal' />
+      <column caption='Review' datatype='string' name='[review]' role='dimension' type='nominal' />
+      <column caption='Steam Algorithm Score' datatype='real' name='[steam_algorithm_score]' role='measure' type='quantitative' />
+      <column caption='Timestamp Created' datatype='integer' name='[timestamp_created]' role='measure' type='quantitative' />
+      <column caption='Timestamp Updated' datatype='integer' name='[timestamp_updated]' role='measure' type='quantitative' />
+      <column caption='Votes Funny' datatype='integer' name='[votes_funny]' role='measure' type='quantitative' />
+      <column caption='Votes Up' datatype='integer' name='[votes_up]' role='measure' type='quantitative' />
+      <column caption='Written During Early Access' datatype='boolean' name='[written_during_early_access]' role='dimension' type='nominal' />
+      <column-instance column='[comment_count]' derivation='None' name='[none:comment_count:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[num_games_owned]' derivation='None' name='[none:num_games_owned:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[playtime_at_review]' derivation='None' name='[none:playtime_at_review:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Comment Count)' hidden='true' name='[Action (Comment Count)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:comment_count:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Num Games Owned)' hidden='true' name='[Action (Num Games Owned)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:num_games_owned:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Playtime At Review)' hidden='true' name='[Action (Playtime At Review)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:playtime_at_review:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='reviews.csv' id='reviews.csv_517C9232550E4DB983EB7D77690BB083'>
+            <properties context=''>
+              <relation connection='textscan.17to9871kzhdx71dduijj0h2vol5' name='reviews.csv' table='[reviews#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='language' ordinal='1' />
+                  <column datatype='string' name='review' ordinal='2' />
+                  <column datatype='integer' name='timestamp_created' ordinal='3' />
+                  <column datatype='integer' name='timestamp_updated' ordinal='4' />
+                  <column datatype='boolean' name='recommended' ordinal='5' />
+                  <column datatype='integer' name='votes_up' ordinal='6' />
+                  <column datatype='integer' name='votes_funny' ordinal='7' />
+                  <column datatype='real' name='steam_algorithm_score' ordinal='8' />
+                  <column datatype='integer' name='comment_count' ordinal='9' />
+                  <column datatype='boolean' name='received_for_free' ordinal='10' />
+                  <column datatype='boolean' name='written_during_early_access' ordinal='11' />
+                  <column datatype='integer' name='num_games_owned' ordinal='12' />
+                  <column datatype='integer' name='num_reviews' ordinal='13' />
+                  <column datatype='integer' name='playtime_forever' ordinal='14' />
+                  <column datatype='integer' name='playtime_last_two_weeks' ordinal='15' />
+                  <column datatype='integer' name='playtime_at_review' ordinal='16' />
+                  <column datatype='integer' name='last_played' ordinal='17' />
+                  <column datatype='string' name='game_id' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='POStags_data(maysey)' inline='true' name='federated.0ykz72f123jrmk1baooam178yj2v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='POStags_data(maysey)' name='textscan.14d00mx0meof6p1fgsv0n0hk6g7d'>
+            <connection class='textscan' directory='C:/Users/ryanp/DATA301 Group Project/course-project-group_1005/data/data_processed' filename='POStags_data(maysey).csv' password='' port='0' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.14d00mx0meof6p1fgsv0n0hk6g7d' name='POStags_data(maysey).csv' table='[POStags_data(maysey)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Word' ordinal='1' />
+            <column datatype='integer' name='Count' ordinal='2' />
+            <column datatype='string' name='POSTags' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.14d00mx0meof6p1fgsv0n0hk6g7d' name='POStags_data(maysey).csv' table='[POStags_data(maysey)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Word' ordinal='1' />
+            <column datatype='integer' name='Count' ordinal='2' />
+            <column datatype='string' name='POSTags' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[POStags_data(maysey).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[POStags_data(maysey).csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[POStags_data(maysey).csv_26335C1756274C21B1E496353747F6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Word</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Word]</local-name>
+            <parent-name>[POStags_data(maysey).csv]</parent-name>
+            <remote-alias>Word</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[POStags_data(maysey).csv_26335C1756274C21B1E496353747F6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count]</local-name>
+            <parent-name>[POStags_data(maysey).csv]</parent-name>
+            <remote-alias>Count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[POStags_data(maysey).csv_26335C1756274C21B1E496353747F6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POSTags</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[POSTags]</local-name>
+            <parent-name>[POStags_data(maysey).csv]</parent-name>
+            <remote-alias>POSTags</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[POStags_data(maysey).csv_26335C1756274C21B1E496353747F6EA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='POS Tags' datatype='string' name='[POSTags]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='POStags_data(maysey).csv' datatype='table' name='[__tableau_internal_object_id__].[POStags_data(maysey).csv_26335C1756274C21B1E496353747F6EA]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='POStags_data(maysey).csv' id='POStags_data(maysey).csv_26335C1756274C21B1E496353747F6EA'>
+            <properties context=''>
+              <relation connection='textscan.14d00mx0meof6p1fgsv0n0hk6g7d' name='POStags_data(maysey).csv' table='[POStags_data(maysey)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Word' ordinal='1' />
+                  <column datatype='integer' name='Count' ordinal='2' />
+                  <column datatype='string' name='POSTags' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='affin_data(maysey)' inline='true' name='federated.1xonfud0pmrbmj11x0gfq0pbsv8q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='affin_data(maysey)' name='textscan.1d3jyct17udtjn1f4xfje1gqfsex'>
+            <connection class='textscan' directory='C:/Users/ryanp/DATA301 Group Project/course-project-group_1005/data/data_processed' filename='affin_data(maysey).csv' password='' port='0' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1d3jyct17udtjn1f4xfje1gqfsex' name='affin_data(maysey).csv' table='[affin_data(maysey)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Comment Count' ordinal='1' />
+            <column datatype='integer' name='playtime_at_review' ordinal='2' />
+            <column datatype='integer' name='Num Games' ordinal='3' />
+            <column datatype='integer' name='Affinity' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1d3jyct17udtjn1f4xfje1gqfsex' name='affin_data(maysey).csv' table='[affin_data(maysey)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Comment Count' ordinal='1' />
+            <column datatype='integer' name='playtime_at_review' ordinal='2' />
+            <column datatype='integer' name='Num Games' ordinal='3' />
+            <column datatype='integer' name='Affinity' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[affin_data(maysey).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[affin_data(maysey).csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[affin_data(maysey).csv_84C8C7863B1D42E8942E897C5DF3AAD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Comment Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Comment Count]</local-name>
+            <parent-name>[affin_data(maysey).csv]</parent-name>
+            <remote-alias>Comment Count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[affin_data(maysey).csv_84C8C7863B1D42E8942E897C5DF3AAD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playtime_at_review</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[playtime_at_review]</local-name>
+            <parent-name>[affin_data(maysey).csv]</parent-name>
+            <remote-alias>playtime_at_review</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[affin_data(maysey).csv_84C8C7863B1D42E8942E897C5DF3AAD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num Games</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num Games]</local-name>
+            <parent-name>[affin_data(maysey).csv]</parent-name>
+            <remote-alias>Num Games</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[affin_data(maysey).csv_84C8C7863B1D42E8942E897C5DF3AAD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Affinity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Affinity]</local-name>
+            <parent-name>[affin_data(maysey).csv]</parent-name>
+            <remote-alias>Affinity</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[affin_data(maysey).csv_84C8C7863B1D42E8942E897C5DF3AAD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Affinity]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Comment Count]' role='measure' type='quantitative' />
+      <column caption='Num Games Owned' datatype='integer' name='[Num Games]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='affin_data(maysey).csv' datatype='table' name='[__tableau_internal_object_id__].[affin_data(maysey).csv_84C8C7863B1D42E8942E897C5DF3AAD4]' role='measure' type='quantitative' />
+      <column caption='Playtime At Review' datatype='integer' name='[playtime_at_review]' role='measure' type='quantitative' />
+      <column-instance column='[Affinity]' derivation='None' name='[none:Affinity:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Comment Count]' derivation='None' name='[none:Comment Count:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Num Games]' derivation='None' name='[none:Num Games:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[playtime_at_review]' derivation='None' name='[none:playtime_at_review:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Affinity,Comment Count)' hidden='true' name='[Action (Affinity,Comment Count)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Affinity:ok]' />
+          <groupfilter function='level-members' level='[none:Comment Count:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Num Games Owned)' hidden='true' name='[Action (Num Games Owned)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Num Games:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Playtime At Review)' hidden='true' name='[Action (Playtime At Review)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:playtime_at_review:ok]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='affin_data(maysey).csv' id='affin_data(maysey).csv_84C8C7863B1D42E8942E897C5DF3AAD4'>
+            <properties context=''>
+              <relation connection='textscan.1d3jyct17udtjn1f4xfje1gqfsex' name='affin_data(maysey).csv' table='[affin_data(maysey)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Comment Count' ordinal='1' />
+                  <column datatype='integer' name='playtime_at_review' ordinal='2' />
+                  <column datatype='integer' name='Num Games' ordinal='3' />
+                  <column datatype='integer' name='Affinity' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='EDA' type='sheet' worksheet='Playtime' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='EDA' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='EDA' type='sheet' worksheet='Games Owned' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='EDA' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Research Question' type='sheet' worksheet='Affinity (2)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Research Question' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Research Question' type='sheet' worksheet='Games Owned' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Research Question' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Research Question' type='sheet' worksheet='Playtime' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Research Question' />
+      </command>
+    </action>
+    <action caption='Hyperlink1' name='[Action6]'>
+      <source dashboard='Overview' type='sheet' />
+      <link caption='' expression='https://www.kaggle.com/smeeeow/steam-game-reviews'>
+        <url-action-type>browser</url-action-type>
+      </link>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Adjectives'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Most Used Adjectives Used in Reviews</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='POStags_data(maysey)' name='federated.0ykz72f123jrmk1baooam178yj2v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ykz72f123jrmk1baooam178yj2v'>
+            <column datatype='integer' name='[Count]' role='measure' type='quantitative' />
+            <column caption='POS Tags' datatype='string' name='[POSTags]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Word]' role='dimension' type='nominal' />
+            <column-instance column='[Count]' derivation='None' name='[none:Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[POSTags]' derivation='None' name='[none:POSTags:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Word]' derivation='None' name='[none:Word:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0ykz72f123jrmk1baooam178yj2v].[none:Count:qk]' included-values='in-range'>
+            <min>10</min>
+            <max>42</max>
+          </filter>
+          <filter class='categorical' column='[federated.0ykz72f123jrmk1baooam178yj2v].[none:POSTags:nk]'>
+            <groupfilter expression='CONTAINS(LOWER([POSTags]), LOWER(&apos;JJ&apos;))' function='filter' user:ui-enumeration='inclusive' user:ui-pattern-include-all-when-empty='true' user:ui-pattern_text='JJ' user:ui-pattern_type='contains'>
+              <groupfilter function='level-members' level='[none:POSTags:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0ykz72f123jrmk1baooam178yj2v].[none:Word:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Word:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Word:nk]' member='&quot;[*]&quot;' />
+                <groupfilter function='member' level='[none:Word:nk]' member='&quot;[/list]&quot;' />
+                <groupfilter function='member' level='[none:Word:nk]' member='&quot;[list]&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ykz72f123jrmk1baooam178yj2v].[none:POSTags:nk]</column>
+            <column>[federated.0ykz72f123jrmk1baooam178yj2v].[none:Count:qk]</column>
+            <column>[federated.0ykz72f123jrmk1baooam178yj2v].[none:Word:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ykz72f123jrmk1baooam178yj2v].[none:Word:nk]' value='74' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0ykz72f123jrmk1baooam178yj2v].[none:Word:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d2005b' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ykz72f123jrmk1baooam178yj2v].[none:Count:qk]</rows>
+        <cols>[federated.0ykz72f123jrmk1baooam178yj2v].[none:Word:nk]</cols>
+      </table>
+      <simple-id uuid='{786DDA69-3A4A-40B5-91C6-C64F3E5724C1}' />
+    </worksheet>
+    <worksheet name='Affinity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Affinity Score of Reviews</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='affin_data(maysey)' name='federated.1xonfud0pmrbmj11x0gfq0pbsv8q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xonfud0pmrbmj11x0gfq0pbsv8q'>
+            <column datatype='integer' name='[Affinity]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Comment Count]' role='measure' type='quantitative' />
+            <column caption='Num Games Owned' datatype='integer' name='[Num Games]' role='measure' type='quantitative' />
+            <column-instance column='[Affinity]' derivation='None' name='[none:Affinity:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Affinity]' derivation='None' name='[none:Affinity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Comment Count]' derivation='None' name='[none:Comment Count:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Comment Count]' derivation='None' name='[none:Comment Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num Games]' derivation='None' name='[none:Num Games:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[playtime_at_review]' derivation='None' name='[none:playtime_at_review:ok]' pivot='key' type='ordinal' />
+            <column caption='Playtime At Review' datatype='integer' name='[playtime_at_review]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[Action (Affinity,Comment Count)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Affinity:ok]' />
+              <groupfilter function='level-members' level='[none:Comment Count:ok]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[Action (Num Games Owned)]'>
+            <groupfilter function='level-members' level='[none:Num Games:ok]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[Action (Playtime At Review)]'>
+            <groupfilter function='level-members' level='[none:playtime_at_review:ok]' user:ui-action-filter='[Action5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Comment Count:qk]' included-values='all' />
+          <slices>
+            <column>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Comment Count:qk]</column>
+            <column>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[Action (Num Games Owned)]</column>
+            <column>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[Action (Affinity,Comment Count)]</column>
+            <column>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[Action (Playtime At Review)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d2005b' />
+                <format attr='mark-transparency' value='129' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Affinity:qk]</rows>
+        <cols>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Comment Count:qk]</cols>
+      </table>
+      <simple-id uuid='{22D4C029-C923-462F-8467-7EA7C2510E32}' />
+    </worksheet>
+    <worksheet name='Affinity (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Affinity Score of Reviews</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='affin_data(maysey)' name='federated.1xonfud0pmrbmj11x0gfq0pbsv8q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xonfud0pmrbmj11x0gfq0pbsv8q'>
+            <column datatype='integer' name='[Affinity]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Comment Count]' role='measure' type='quantitative' />
+            <column caption='Num Games Owned' datatype='integer' name='[Num Games]' role='measure' type='quantitative' />
+            <column-instance column='[Affinity]' derivation='None' name='[none:Affinity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Comment Count]' derivation='None' name='[none:Comment Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Num Games]' derivation='None' name='[none:Num Games:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[playtime_at_review]' derivation='None' name='[none:playtime_at_review:ok]' pivot='key' type='ordinal' />
+            <column caption='Playtime At Review' datatype='integer' name='[playtime_at_review]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[Action (Num Games Owned)]'>
+            <groupfilter function='level-members' level='[none:Num Games:ok]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[Action (Playtime At Review)]'>
+            <groupfilter function='level-members' level='[none:playtime_at_review:ok]' user:ui-action-filter='[Action5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Comment Count:qk]' included-values='in-range'>
+            <max>176</max>
+          </filter>
+          <slices>
+            <column>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Comment Count:qk]</column>
+            <column>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[Action (Num Games Owned)]</column>
+            <column>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[Action (Playtime At Review)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d2005b' />
+                <format attr='mark-transparency' value='129' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Affinity:qk]</rows>
+        <cols>[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Comment Count:qk]</cols>
+      </table>
+      <simple-id uuid='{586F3534-7CCD-409C-A73B-44A9E372D738}' />
+    </worksheet>
+    <worksheet name='Games Owned'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of Games Owned by Each Reviewer</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='reviews' name='federated.1ekih450yvwccu17ypca00fm6o76' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ekih450yvwccu17ypca00fm6o76'>
+            <_.fcp.ObjectModelTableType.false...column caption='reviews.csv' datatype='integer' name='[__tableau_internal_object_id__].[reviews.csv_517C9232550E4DB983EB7D77690BB083]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[reviews.csv_517C9232550E4DB983EB7D77690BB083]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:reviews.csv_517C9232550E4DB983EB7D77690BB083:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='reviews.csv' datatype='table' name='[__tableau_internal_object_id__].[reviews.csv_517C9232550E4DB983EB7D77690BB083]' role='measure' type='quantitative' />
+            <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+            <column-instance column='[comment_count]' derivation='None' name='[none:comment_count:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[num_games_owned]' derivation='None' name='[none:num_games_owned:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[playtime_at_review]' derivation='None' name='[none:playtime_at_review:ok]' pivot='key' type='ordinal' />
+            <column caption='Num Games Owned' datatype='integer' name='[num_games_owned]' role='measure' type='quantitative' />
+            <column caption='Playtime At Review' datatype='integer' name='[playtime_at_review]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ekih450yvwccu17ypca00fm6o76].[Action (Comment Count)]'>
+            <groupfilter function='level-members' level='[none:comment_count:ok]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ekih450yvwccu17ypca00fm6o76].[Action (Playtime At Review)]'>
+            <groupfilter function='level-members' level='[none:playtime_at_review:ok]' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1ekih450yvwccu17ypca00fm6o76].[__tableau_internal_object_id__].[cnt:reviews.csv_517C9232550E4DB983EB7D77690BB083:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>6557</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1ekih450yvwccu17ypca00fm6o76].[none:num_games_owned:qk]' included-values='in-range'>
+            <min>0</min>
+            <max>19072</max>
+          </filter>
+          <slices>
+            <column>[federated.1ekih450yvwccu17ypca00fm6o76].[__tableau_internal_object_id__].[cnt:reviews.csv_517C9232550E4DB983EB7D77690BB083:qk]</column>
+            <column>[federated.1ekih450yvwccu17ypca00fm6o76].[none:num_games_owned:qk]</column>
+            <column>[federated.1ekih450yvwccu17ypca00fm6o76].[Action (Comment Count)]</column>
+            <column>[federated.1ekih450yvwccu17ypca00fm6o76].[Action (Playtime At Review)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ekih450yvwccu17ypca00fm6o76].[__tableau_internal_object_id__].[cnt:reviews.csv_517C9232550E4DB983EB7D77690BB083:qk]' scope='rows' value='Number of Reviewers' />
+            <format attr='title' class='0' field='[federated.1ekih450yvwccu17ypca00fm6o76].[none:num_games_owned:qk]' scope='cols' value='Number of Games Owned' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1ekih450yvwccu17ypca00fm6o76].[__tableau_internal_object_id__].[cnt:reviews.csv_517C9232550E4DB983EB7D77690BB083:qk]' value='Number of Reviewers'>
+              <formatted-text>
+                <run>Number of Reviewers</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='129' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ekih450yvwccu17ypca00fm6o76].[__tableau_internal_object_id__].[cnt:reviews.csv_517C9232550E4DB983EB7D77690BB083:qk]</rows>
+        <cols>[federated.1ekih450yvwccu17ypca00fm6o76].[none:num_games_owned:qk]</cols>
+      </table>
+      <simple-id uuid='{3343AFCF-FB7C-4382-BBD7-6168623886C8}' />
+    </worksheet>
+    <worksheet name='Playtime'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Reviewer Playtime in Minutes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='reviews' name='federated.1ekih450yvwccu17ypca00fm6o76' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ekih450yvwccu17ypca00fm6o76'>
+            <_.fcp.ObjectModelTableType.false...column caption='reviews.csv' datatype='integer' name='[__tableau_internal_object_id__].[reviews.csv_517C9232550E4DB983EB7D77690BB083]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[reviews.csv_517C9232550E4DB983EB7D77690BB083]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:reviews.csv_517C9232550E4DB983EB7D77690BB083:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='reviews.csv' datatype='table' name='[__tableau_internal_object_id__].[reviews.csv_517C9232550E4DB983EB7D77690BB083]' role='measure' type='quantitative' />
+            <column caption='Comment Count' datatype='integer' name='[comment_count]' role='measure' type='quantitative' />
+            <column-instance column='[comment_count]' derivation='None' name='[none:comment_count:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[num_games_owned]' derivation='None' name='[none:num_games_owned:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[playtime_at_review]' derivation='None' name='[none:playtime_at_review:qk]' pivot='key' type='quantitative' />
+            <column caption='Num Games Owned' datatype='integer' name='[num_games_owned]' role='measure' type='quantitative' />
+            <column caption='Playtime At Review' datatype='integer' name='[playtime_at_review]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ekih450yvwccu17ypca00fm6o76].[Action (Comment Count)]'>
+            <groupfilter function='level-members' level='[none:comment_count:ok]' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1ekih450yvwccu17ypca00fm6o76].[Action (Num Games Owned)]'>
+            <groupfilter function='level-members' level='[none:num_games_owned:ok]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1ekih450yvwccu17ypca00fm6o76].[none:playtime_at_review:qk]' included-values='in-range'>
+            <max>1556556</max>
+          </filter>
+          <slices>
+            <column>[federated.1ekih450yvwccu17ypca00fm6o76].[none:playtime_at_review:qk]</column>
+            <column>[federated.1ekih450yvwccu17ypca00fm6o76].[Action (Num Games Owned)]</column>
+            <column>[federated.1ekih450yvwccu17ypca00fm6o76].[Action (Comment Count)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ekih450yvwccu17ypca00fm6o76].[__tableau_internal_object_id__].[cnt:reviews.csv_517C9232550E4DB983EB7D77690BB083:qk]' scope='rows' value='Number of Reviewers' />
+            <format attr='title' class='0' field='[federated.1ekih450yvwccu17ypca00fm6o76].[none:playtime_at_review:qk]' scope='cols' value='Playtime At Review (minutes)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='129' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ekih450yvwccu17ypca00fm6o76].[__tableau_internal_object_id__].[cnt:reviews.csv_517C9232550E4DB983EB7D77690BB083:qk]</rows>
+        <cols>[federated.1ekih450yvwccu17ypca00fm6o76].[none:playtime_at_review:qk]</cols>
+      </table>
+      <simple-id uuid='{04AC4474-B608-48B4-91A4-7970FACBD2E7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='EDA'>
+      <style />
+      <size maxheight='1008' maxwidth='1504' minheight='1008' minwidth='1504' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='reviews' name='federated.1ekih450yvwccu17ypca00fm6o76' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ekih450yvwccu17ypca00fm6o76'>
+        <column-instance column='[num_games_owned]' derivation='None' name='[none:num_games_owned:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[playtime_at_review]' derivation='None' name='[none:playtime_at_review:qk]' pivot='key' type='quantitative' />
+        <column caption='Num Games Owned' datatype='integer' name='[num_games_owned]' role='measure' type='quantitative' />
+        <column caption='Playtime At Review' datatype='integer' name='[playtime_at_review]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98412' id='23' param='horz' w='98936' x='532' y='794'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98412' id='21' w='98936' x='532' y='794'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98412' id='18' param='horz' w='98936' x='532' y='794'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98412' id='8' w='98936' x='532' y='794'>
+                  <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='10317' id='3' w='98936' x='532' y='794'>
+                    <formatted-text>
+                      <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='22'>Exploratory Data Analysis (EDA)</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='4' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#e2e6f0' />
+                    </zone-style>
+                  </zone>
+                  <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='41072' id='5' w='53723' x='532' y='11111'>
+                    <formatted-text>
+                      <run fontcolor='#000000dd' fontsize='11'>Our project focuses on analyzing Steam reviews of various games in a wide range of genres. Contributing factors to the quality of a review may involve the user&apos;s length of gaming experience and length of gaming playtime.</run>
+                      <run>Æ&#10;&#10;</run>
+                      <run fontcolor='#000000dd' fontsize='11'>As we can see, most of our data comes from users that own less than 1000 games. From the graph, we can also see that highest number of games owned is 19 072 and the lowest is 0.</run>
+                      <run>Æ&#10;&#10;</run>
+                      <run fontcolor='#000000dd' fontsize='11'>One interesting point to note is that there are 55 game reviews that came from reviewers that don&apos;t own any Steam games. In this case, there is a chance that these reviews may be inaccurate; thus, we may consider removing these reviews from our dataset.</run>
+                      <run>Æ&#10;</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='37401' id='6' name='Games Owned' w='45213' x='54255' y='11111'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='6746' id='16' name='Games Owned' param='[federated.1ekih450yvwccu17ypca00fm6o76].[none:num_games_owned:qk]' values='database' w='45213' x='54255' y='48512'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='37401' id='20' name='Playtime' w='45213' x='54255' y='55258'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='6547' id='24' name='Playtime' param='[federated.1ekih450yvwccu17ypca00fm6o76].[none:playtime_at_review:qk]' values='database' w='45213' x='54255' y='92659'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone _.fcp.SetMembershipControl.false...type='empty' _.fcp.SetMembershipControl.true...type-v2='empty' h='5952' id='25' w='53723' x='532' y='52183'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='41071' id='26' w='53723' x='532' y='58135'>
+                    <formatted-text>
+                      <run fontcolor='#000000dd' fontsize='11'>Much like the amount of gaming experience, the amount of playtime is also an important contributing factor as short playtime may result in biased or inaccurate reviews while long playtimes not only review based on first impressions, but they also have some experience to comment on other aspects as well.</run>
+                      <run>Æ&#10;&#10;</run>
+                      <run fontcolor='#000000dd' fontsize='11'>Here, we see that some people that wrote a review after less than 5 minutes of playing! Luckily, the reviews with less than an hour of playtime account for a very small percentage of all the reviews in our dataset.</run>
+                      <run>Æ&#10;&#10;</run>
+                      <run fontcolor='#000000dd' fontsize='11'>However, this information is very valuable as, once again, reviews with extremely low playtime may be unreliable.</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='42' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98412' id='41' param='vert' w='98936' x='532' y='794'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='10317' id='3' w='98936' x='532' y='794'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='22'>Exploratory Data Analysis (EDA)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e2e6f0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='41072' id='5' w='53723' x='532' y='11111'>
+                  <formatted-text>
+                    <run fontcolor='#000000dd' fontsize='11'>Our project focuses on analyzing Steam reviews of various games in a wide range of genres. Contributing factors to the quality of a review may involve the user&apos;s length of gaming experience and length of gaming playtime.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontsize='11'>As we can see, most of our data comes from users that own less than 1000 games. From the graph, we can also see that highest number of games owned is 19 072 and the lowest is 0.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontsize='11'>One interesting point to note is that there are 55 game reviews that came from reviewers that don&apos;t own any Steam games. In this case, there is a chance that these reviews may be inaccurate; thus, we may consider removing these reviews from our dataset.</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='6746' id='16' name='Games Owned' param='[federated.1ekih450yvwccu17ypca00fm6o76].[none:num_games_owned:qk]' values='database' w='45213' x='54255' y='48512'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37401' id='6' is-fixed='true' name='Games Owned' w='45213' x='54255' y='11111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='6547' id='24' name='Playtime' param='[federated.1ekih450yvwccu17ypca00fm6o76].[none:playtime_at_review:qk]' values='database' w='45213' x='54255' y='92659'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37401' id='20' is-fixed='true' name='Playtime' w='45213' x='54255' y='55258'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='41071' id='26' w='53723' x='532' y='58135'>
+                  <formatted-text>
+                    <run fontcolor='#000000dd' fontsize='11'>Much like the amount of gaming experience, the amount of playtime is also an important contributing factor as short playtime may result in biased or inaccurate reviews while long playtimes not only review based on first impressions, but they also have some experience to comment on other aspects as well.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontsize='11'>Here, we see that some people that wrote a review after less than 5 minutes of playing! Luckily, the reviews with less than an hour of playtime account for a very small percentage of all the reviews in our dataset.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontsize='11'>However, this information is very valuable as, once again, reviews with extremely low playtime may be unreliable.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8E91F922-64E1-4852-B843-D505E1504948}' />
+    </dashboard>
+    <dashboard name='Overview'>
+      <style />
+      <size maxheight='1000' maxwidth='1504' minheight='1000' minwidth='1504' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98400' id='3' param='vert' w='98936' x='532' y='800'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98400' id='4' w='98936' x='532' y='800'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='10684' id='5' w='98936' x='532' y='800'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#24292e' fontsize='22'>Group 1005 - An Analysis of Steam Reviews</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='4' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#d4d9f0' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='21816' id='6' w='81516' x='532' y='11484'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontsize='16' underline='true'>Overview</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='12'>Steam is a massive online store for video games that heavily impacts both gamers and developers alike. This data is not only interesting to our group, but is also relevant to many other students in the class due to the popularity video games and the impact of reviews. The dataset could even be used in analyses by game companies to find correlations between reviews and other statistics.</run>
+                  <run>Æ&#10;&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='21816' id='7' is-scaled='1' param='C:/Users/mayse/Desktop/steam_logo.png' w='17420' x='82048' y='11484'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='65900' id='8' w='98936' x='532' y='33300'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontsize='16' underline='true'>Our Goal</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='12'>Our team hopes to create a visualisation and analysis of Steam review data to potentially find interesting correlations between review content and other factors such as the reviewer&apos;s hours played or whether they received the game for free. While our goals are mainly fun and learning in this project, this data could potentially be used for full-scale analysis of user behaviour.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='12'>Some of the questions we want to answer are:</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='12'>- Is there any correlation between receiving a game for free and the positivity of review?</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='12'>- How do the most common words differ across different 5 star reviews?</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='12'>- How do reviews differ across the 5 genres?</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='16' underline='true'>Dataset Origin</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#24292e' fontsize='12'>The dataset is from user &apos;Mikeemes&apos; on Kaggle, a data scientist from Toronto, Canada. Our dataset contains reviews from some of the most popular games on Steam. The reviews include data such as review text, rating, votes up/down, whether the game purchased or gifted, etc. The dataset was created on October 14, 2020. The primary purpose for this dataset is for personal interest, although it could also be used to determine and correlation between two variables. For example, if receiving a game for free has any effect on the score that a reviewer gives to a game. The dataset was collected using Steam&apos;s API.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#24292e' fontsize='12'>Data link: </run>
+                  <run auto-url='true' fontcolor='#0000ff' fontsize='12' hyperlink='tabdoc:load-url url=&amp;quot;https://www.kaggle.com/smeeeow/steam-game-reviews&amp;quot;' underline='true'>https://www.kaggle.com/smeeeow/steam-game-reviews</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='24' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98400' id='23' param='vert' w='98936' x='532' y='800'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='10684' id='5' w='98936' x='532' y='800'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#24292e' fontsize='22'>Group 1005 - An Analysis of Steam Reviews</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#d4d9f0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='21816' id='6' w='81516' x='532' y='11484'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='16' underline='true'>Overview</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='12'>Steam is a massive online store for video games that heavily impacts both gamers and developers alike. This data is not only interesting to our group, but is also relevant to many other students in the class due to the popularity video games and the impact of reviews. The dataset could even be used in analyses by game companies to find correlations between reviews and other statistics.</run>
+                    <run>Æ&#10;&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='210' h='21816' id='7' is-fixed='true' is-scaled='1' param='C:/Users/mayse/Desktop/steam_logo.png' w='17420' x='82048' y='11484'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='65900' id='8' w='98936' x='532' y='33300'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='16' underline='true'>Our Goal</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='12'>Our team hopes to create a visualisation and analysis of Steam review data to potentially find interesting correlations between review content and other factors such as the reviewer&apos;s hours played or whether they received the game for free. While our goals are mainly fun and learning in this project, this data could potentially be used for full-scale analysis of user behaviour.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='12'>Some of the questions we want to answer are:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='12'>- Is there any correlation between receiving a game for free and the positivity of review?</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='12'>- How do the most common words differ across different 5 star reviews?</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='12'>- How do reviews differ across the 5 genres?</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='16' underline='true'>Dataset Origin</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#24292e' fontsize='12'>The dataset is from user &apos;Mikeemes&apos; on Kaggle, a data scientist from Toronto, Canada. Our dataset contains reviews from some of the most popular games on Steam. The reviews include data such as review text, rating, votes up/down, whether the game purchased or gifted, etc. The dataset was created on October 14, 2020. The primary purpose for this dataset is for personal interest, although it could also be used to determine and correlation between two variables. For example, if receiving a game for free has any effect on the score that a reviewer gives to a game. The dataset was collected using Steam&apos;s API.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#24292e' fontsize='12'>Data link: </run>
+                    <run auto-url='true' fontcolor='#0000ff' fontsize='12' hyperlink='tabdoc:load-url url=&amp;quot;https://www.kaggle.com/smeeeow/steam-game-reviews&amp;quot;' underline='true'>https://www.kaggle.com/smeeeow/steam-game-reviews</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FFB7CD1A-7F66-484F-AFAD-8D83BAE178F3}' />
+    </dashboard>
+    <dashboard name='Research Question'>
+      <style />
+      <size maxheight='3250' maxwidth='1504' minheight='3250' minwidth='1504' preset-index='17' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='affin_data(maysey)' name='federated.1xonfud0pmrbmj11x0gfq0pbsv8q' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1xonfud0pmrbmj11x0gfq0pbsv8q'>
+        <column datatype='integer' name='[Comment Count]' role='measure' type='quantitative' />
+        <column-instance column='[Comment Count]' derivation='None' name='[none:Comment Count:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='87262' id='14' param='horz' w='98936' x='532' y='246'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='87262' id='7' w='98936' x='532' y='246'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='3231' id='3' w='98936' x='532' y='246'>
+                <formatted-text>
+                  <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='22'>Research Question</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='4' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#e2e6f0' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7692' id='5' w='98936' x='532' y='3477'>
+                <formatted-text>
+                  <run fontcolor='#000000dd' fontsize='12'>An interesting question that arose while conducting our exploratory dataset analysis was whether </run>
+                  <run bold='true' fontcolor='#000000dd' fontsize='12'>a reviewer&apos;s word choice would garner feedback from other reviewers</run>
+                  <run fontcolor='#000000dd' fontsize='12'>. Such that, were there specific words that would target or trigger a certain response? Did a negative review get more comments than a positive one?</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000dd' fontsize='12'>To do this, we compared the review words to the number of review comments. As we have a large dataset, we focused on analyzing the reviews with more than 50 feedback responses. Below is a plot showing the review words that had at least 10 comments:</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='15323' id='6' name='Adjectives' w='98936' x='532' y='11169'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='5416' id='10' w='98936' x='532' y='26492'>
+                <formatted-text>
+                  <run fontcolor='#000000dd' fontsize='12'>As we can see, mostly positive word choices would gain more comments. But perhaps this is because, for top-rated games, the ratio between positive and negative reviews is heavily unbalanced.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000dd' fontsize='12'>We also took a look at the overall affinity of each review because analyzing individual words may not be accurate as it doesn&apos;t take into consideration of oxymorons.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17534' id='11' name='Affinity' w='98936' x='532' y='31908'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='9239' id='12' w='98936' x='532' y='51482'>
+                <formatted-text>
+                  <run fontcolor='#000000dd' fontsize='12'>Once again, we see that most reviews have a positive affinity score and make up for a large majority of comment counts. In addition, notice that the review with the second highest number of comments has an affinity score of approximately -15.0. </run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000dd' fontsize='12'>What is even more interesting is that reviews with more than 100 comments, generally have a low (but positive) affinity score, with the highest score being approximately 10.0. Suprisingly, the highest number of comments has the second </run>
+                  <run bold='true' fontcolor='#000000dd' fontsize='12'>lowest</run>
+                  <run fontcolor='#000000dd' fontsize='12'> positive affinity score, which is interesting to see as this means the review was positive but relatively neutral.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000dd' fontsize='12'>Below are linked plots to see the relation between affinity score, number of games owned, and playtime.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='2040' id='15' name='Affinity' param='[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Comment Count:qk]' values='database' w='98936' x='532' y='49442'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13529' id='16' name='Affinity (2)' show-title='false' w='98936' x='532' y='60721'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13258' id='17' name='Games Owned' show-title='false' w='49468' x='50000' y='74250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13258' id='18' name='Playtime' show-title='false' w='49468' x='532' y='74250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='12246' id='23' w='98936' x='532' y='87508'>
+            <formatted-text>
+              <run fontcolor='#000000' fontsize='12'>A personal hypothesis of mine was that reviewers who had high playtime and/or more experienced gamers would write more critic reviews and have more comments - however, from the linked plots, this does not seem to be the case. In fact, it is the </run>
+              <run bold='true' fontcolor='#000000' fontsize='12'>opposite</run>
+              <run fontcolor='#000000' fontsize='12'>. Those on the high end of the spectrum for playtime or games owned generally have few to no comments and a neutral affinity score.</run>
+              <run>Æ&#10;&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='14' underline='true'>Conclusion</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000' fontsize='12'>Overall, this analysis between the number of comments and the reviews&apos; word choice and affinity score showed some very interesting results. And from this, we see there is some correlation between the positivity of the review and the amount of other user feedback, such that generally with top rated games, positive reviews garner more attention as others are able to relate to the reviewer, whether that may be from life experience or in-game experience.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1850' minheight='1850' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='35' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='99508' id='34' param='vert' w='98936' x='532' y='246'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='3231' id='3' w='98936' x='532' y='246'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='22'>Research Question</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='4' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e2e6f0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='7692' id='5' w='98936' x='532' y='3477'>
+                  <formatted-text>
+                    <run fontcolor='#000000dd' fontsize='12'>An interesting question that arose while conducting our exploratory dataset analysis was whether </run>
+                    <run bold='true' fontcolor='#000000dd' fontsize='12'>a reviewer&apos;s word choice would garner feedback from other reviewers</run>
+                    <run fontcolor='#000000dd' fontsize='12'>. Such that, were there specific words that would target or trigger a certain response? Did a negative review get more comments than a positive one?</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontsize='12'>To do this, we compared the review words to the number of review comments. As we have a large dataset, we focused on analyzing the reviews with more than 50 feedback responses. Below is a plot showing the review words that had at least 10 comments:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='15323' id='6' is-fixed='true' name='Adjectives' w='98936' x='532' y='11169'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='5416' id='10' w='98936' x='532' y='26492'>
+                  <formatted-text>
+                    <run fontcolor='#000000dd' fontsize='12'>As we can see, mostly positive word choices would gain more comments. But perhaps this is because, for top-rated games, the ratio between positive and negative reviews is heavily unbalanced.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontsize='12'>We also took a look at the overall affinity of each review because analyzing individual words may not be accurate as it doesn&apos;t take into consideration of oxymorons.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='2040' id='15' name='Affinity' param='[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Comment Count:qk]' values='database' w='98936' x='532' y='49442'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='17534' id='11' is-fixed='true' name='Affinity' w='98936' x='532' y='31908'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='9239' id='12' w='98936' x='532' y='51482'>
+                  <formatted-text>
+                    <run fontcolor='#000000dd' fontsize='12'>Once again, we see that most reviews have a positive affinity score and make up for a large majority of comment counts. In addition, notice that the review with the second highest number of comments has an affinity score of approximately -15.0. </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontsize='12'>What is even more interesting is that reviews with more than 100 comments, generally have a low (but positive) affinity score, with the highest score being approximately 10.0. Suprisingly, the highest number of comments has the second </run>
+                    <run bold='true' fontcolor='#000000dd' fontsize='12'>lowest</run>
+                    <run fontcolor='#000000dd' fontsize='12'> positive affinity score, which is interesting to see as this means the review was positive but relatively neutral.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000dd' fontsize='12'>Below are linked plots to see the relation between affinity score, number of games owned, and playtime.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='13529' id='16' is-fixed='true' name='Affinity (2)' show-title='false' w='98936' x='532' y='60721'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='13258' id='18' is-fixed='true' name='Playtime' show-title='false' w='49468' x='532' y='74250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='13258' id='17' is-fixed='true' name='Games Owned' show-title='false' w='49468' x='50000' y='74250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='12246' id='23' w='98936' x='532' y='87508'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='12'>A personal hypothesis of mine was that reviewers who had high playtime and/or more experienced gamers would write more critic reviews and have more comments - however, from the linked plots, this does not seem to be the case. In fact, it is the </run>
+                    <run bold='true' fontcolor='#000000' fontsize='12'>opposite</run>
+                    <run fontcolor='#000000' fontsize='12'>. Those on the high end of the spectrum for playtime or games owned generally have few to no comments and a neutral affinity score.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='14' underline='true'>Conclusion</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='12'>Overall, this analysis between the number of comments and the reviews&apos; word choice and affinity score showed some very interesting results. And from this, we see there is some correlation between the positivity of the review and the amount of other user feedback, such that generally with top rated games, positive reviews garner more attention as others are able to relate to the reviewer, whether that may be from life experience or in-game experience.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A9B9F001-54B1-462A-A85B-AFF6158D3E74}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='dashboard' maximized='true' name='Overview'>
+      <viewpoints />
+      <active id='8' />
+      <simple-id uuid='{0F2DF1D8-1BED-4839-8A7D-C3A4F22B2F26}' />
+    </window>
+    <window class='dashboard' name='EDA'>
+      <viewpoints>
+        <viewpoint name='Games Owned'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Playtime'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{808DF84C-1C5A-4F4E-ABD2-A0CA2F854C40}' />
+    </window>
+    <window class='dashboard' name='Research Question'>
+      <viewpoints>
+        <viewpoint name='Adjectives'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Affinity'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Affinity (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Games Owned'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Playtime'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{DED69905-F71F-44D3-AA54-1CAD6D0FDB06}' />
+    </window>
+    <window class='worksheet' name='Games Owned'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ekih450yvwccu17ypca00fm6o76].[__tableau_internal_object_id__].[cnt:reviews.csv_517C9232550E4DB983EB7D77690BB083:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1ekih450yvwccu17ypca00fm6o76].[none:num_games_owned:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7E8AE2EE-4BFF-4887-8894-40F0B0AD1C41}' />
+    </window>
+    <window class='worksheet' name='Playtime'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ekih450yvwccu17ypca00fm6o76].[none:playtime_at_review:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2F7B893-8B3A-4D45-AEC5-1A959D2297A3}' />
+    </window>
+    <window class='worksheet' name='Adjectives'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0ykz72f123jrmk1baooam178yj2v].[none:Count:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FF9CB0BD-D468-4993-A80E-C998E1A55527}' />
+    </window>
+    <window class='worksheet' name='Affinity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1xonfud0pmrbmj11x0gfq0pbsv8q].[none:Comment Count:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BA7F93C0-545C-4E7F-9AAC-000126C0FB80}' />
+    </window>
+    <window class='worksheet' name='Affinity (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D93CA8B8-3191-40CA-9846-EE19AB92C5A4}' />
+    </window>
+  </windows>
+</workbook>
