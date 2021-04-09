@@ -8,8 +8,7 @@ Final Dashboard (combined): [Online Dashboard Link](https://us-west-2b.online.ta
 
 Jaden: [Online Dashboard Link](https://us-west-2b.online.tableau.com/#/site/data301/views/Lab7-Group1005-Jaden/Introduction?:iid=2)
 Maysey: [Online Dashboard Link](https://us-west-2b.online.tableau.com/#/site/data301/views/Lab7-Group1005-Maysey/Overview?:iid=7)
-Ryan: 
-
+Ryan: [Online Dashboard Link](https://us-west-2b.online.tableau.com/#/site/data301/views/DATA301Milestone4Lab7DashboardRyanPeters/Lab7Dashboard)
 ## Milestones
 
 Details for Milestone are available on Canvas (left sidebar, Course Project) or [here](https://firas.moosvi.com/courses/data301/project/milestone01.html).
